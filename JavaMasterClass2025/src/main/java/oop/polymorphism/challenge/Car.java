@@ -8,15 +8,16 @@ public class Car {
     }
 
     public void startEngine() {
-        System.out.println("Starting the engine of the car: " + description);
+        System.out.println("Car -> Starting the engine");
+
     }
 
     public void drive() {
-        System.out.println("Driving the car: " + description);
+        System.out.println("Car -> Driving, type is: " + getClass().getSimpleName());
     }
 
-    public void runEngine() {
-        System.out.println("Running the engine of the car: " + description);
+    protected void runEngine() {
+        System.out.println("Car -> Running the engine");
     }
 
     public static Car getCar(String type, String description, double avgKmPerLiterCharge, int batterySize, int cylinders) {
